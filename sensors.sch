@@ -148,7 +148,7 @@ F 3 "" H 4250 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3750 1950 0    39   ~ 0
-MPU_MISO
+SPI1_MISO
 Wire Wire Line
 	2100 2800 1900 2800
 Wire Wire Line
@@ -175,13 +175,13 @@ Wire Wire Line
 Wire Wire Line
 	3750 1950 3700 1950
 Text Label 3750 2100 0    39   ~ 0
-MPU_SS
+SPI1_NSS
 Wire Wire Line
 	3750 2100 3700 2100
 Text Label 3750 1800 0    39   ~ 0
-MPU_MOSI
+SPI1_MOSI
 Text Label 3750 1700 0    39   ~ 0
-MPU_SCLK
+SPI1_SCK
 Wire Wire Line
 	3750 1800 3700 1800
 Wire Wire Line
@@ -190,7 +190,7 @@ NoConn ~ 3700 1450
 NoConn ~ 3700 1550
 NoConn ~ 3700 2450
 Text Label 3750 2250 0    39   ~ 0
-MPU_INT
+MPU9250_INT
 Wire Wire Line
 	3750 2250 3700 2250
 $Comp

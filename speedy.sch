@@ -416,89 +416,9 @@ $EndComp
 Wire Wire Line
 	1350 3850 1350 3800
 Wire Wire Line
-	1350 3800 1600 3800
+	1350 3800 2850 3800
 Wire Wire Line
-	1600 3800 1850 3800
-Wire Wire Line
-	1850 3800 2100 3800
-Wire Wire Line
-	2100 3800 2350 3800
-Wire Wire Line
-	2350 3800 2600 3800
-Wire Wire Line
-	2600 3800 2800 3800
-Wire Wire Line
-	2800 3800 2850 3800
-Wire Wire Line
-	2800 3800 2800 3850
-Wire Wire Line
-	2800 3850 2800 3900
-Wire Wire Line
-	2800 3900 2800 3950
-Wire Wire Line
-	2800 3950 2800 4000
-Wire Wire Line
-	2800 4000 2800 4050
-Wire Wire Line
-	2800 4050 2800 4100
-Wire Wire Line
-	2800 4100 2800 4150
-Wire Wire Line
-	2800 4150 2800 4200
-Wire Wire Line
-	2800 4200 2800 4250
-Wire Wire Line
-	2800 4250 2800 4300
-Wire Wire Line
-	2800 4300 2800 4350
-Wire Wire Line
-	2800 4350 2800 4400
-Wire Wire Line
-	2800 4400 2800 4450
-Wire Wire Line
-	2800 4450 2800 4500
-Wire Wire Line
-	2800 4500 2800 4550
-Wire Wire Line
-	2800 4550 2800 4600
-Wire Wire Line
-	2800 4600 2800 4650
-Wire Wire Line
-	2800 4650 2800 4700
-Wire Wire Line
-	2800 4700 2800 4750
-Wire Wire Line
-	2800 4750 2800 4800
-Wire Wire Line
-	2800 4800 2800 4850
-Wire Wire Line
-	2800 4850 2800 4900
-Wire Wire Line
-	2800 4900 2800 4950
-Wire Wire Line
-	2800 4950 2800 5000
-Wire Wire Line
-	2800 5000 2800 5050
-Wire Wire Line
-	2800 5050 2800 5100
-Wire Wire Line
-	2800 5100 2800 5150
-Wire Wire Line
-	2800 5150 2800 5200
-Wire Wire Line
-	2800 5200 2800 5250
-Wire Wire Line
-	2800 5250 2800 5300
-Wire Wire Line
-	2800 5300 2800 5350
-Wire Wire Line
-	2800 5350 2800 5400
-Wire Wire Line
-	2800 5400 2800 5450
-Wire Wire Line
-	2800 5450 2800 5500
-Wire Wire Line
-	2800 5500 2800 5550
+	2800 3800 2800 5550
 Wire Wire Line
 	2800 5550 2850 5550
 Wire Wire Line
@@ -606,49 +526,11 @@ Connection ~ 2800 3850
 Wire Wire Line
 	2850 2850 2800 2850
 Wire Wire Line
-	2800 3500 2800 3450
-Wire Wire Line
-	2800 3450 2800 3400
-Wire Wire Line
-	2800 3400 2800 3350
-Wire Wire Line
-	2800 3350 2800 3300
-Wire Wire Line
-	2800 3300 2800 3250
-Wire Wire Line
-	2800 3250 2800 3200
-Wire Wire Line
-	2800 3200 2800 3150
-Wire Wire Line
-	2800 3150 2800 3100
-Wire Wire Line
-	2800 3100 2800 3050
-Wire Wire Line
-	2800 3050 2800 3000
-Wire Wire Line
-	2800 3000 2800 2950
-Wire Wire Line
-	2800 2950 2800 2900
-Wire Wire Line
-	2800 2900 2800 2850
-Wire Wire Line
-	2800 2850 2800 2750
+	2800 3500 2800 2750
 Wire Wire Line
 	1350 3450 1350 3500
 Wire Wire Line
-	1350 3500 1600 3500
-Wire Wire Line
-	1600 3500 1850 3500
-Wire Wire Line
-	1850 3500 2100 3500
-Wire Wire Line
-	2100 3500 2350 3500
-Wire Wire Line
-	2350 3500 2600 3500
-Wire Wire Line
-	2600 3500 2800 3500
-Wire Wire Line
-	2800 3500 2850 3500
+	1350 3500 2850 3500
 Wire Wire Line
 	2850 3450 2800 3450
 Connection ~ 2800 3450
@@ -706,11 +588,7 @@ Connection ~ 1950 1100
 Wire Wire Line
 	2850 1100 1950 1100
 Wire Wire Line
-	1950 1050 1950 1100
-Wire Wire Line
-	1950 1100 1950 1150
-Wire Wire Line
-	1950 1150 1950 1200
+	1950 1050 1950 1200
 Wire Wire Line
 	1950 1500 1950 1550
 Wire Wire Line
@@ -731,23 +609,15 @@ Wire Wire Line
 Wire Wire Line
 	2350 2600 2350 2650
 Wire Wire Line
-	2350 6350 2600 6350
-Wire Wire Line
-	2600 6350 2850 6350
+	2350 6350 2850 6350
 Connection ~ 2600 6350
 Wire Wire Line
-	2350 6650 2600 6650
-Wire Wire Line
-	2600 6650 2850 6650
+	2350 6650 2850 6650
 Connection ~ 2600 6650
 Wire Wire Line
-	2100 6100 2350 6100
+	2100 6100 3100 6100
 Wire Wire Line
-	2350 6100 3100 6100
-Wire Wire Line
-	2100 5800 2350 5800
-Wire Wire Line
-	2350 5800 3100 5800
+	2100 5800 3100 5800
 Connection ~ 2350 5800
 Connection ~ 2350 6100
 Connection ~ 2100 6100
@@ -804,15 +674,11 @@ $EndComp
 Wire Wire Line
 	6050 6850 6050 6800
 Wire Wire Line
-	4900 6800 6050 6800
-Wire Wire Line
-	6050 6800 6100 6800
+	4900 6800 6100 6800
 Wire Wire Line
 	6050 7250 6050 7300
 Wire Wire Line
-	5550 7300 6050 7300
-Wire Wire Line
-	6050 7300 6100 7300
+	5550 7300 6100 7300
 $Comp
 L GND #PWR?
 U 1 1 553697B0
@@ -825,11 +691,7 @@ F 3 "" H 6500 7350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 6800 6500 7050
-Wire Wire Line
-	6500 7050 6500 7300
-Wire Wire Line
-	6500 7300 6500 7350
+	6500 6800 6500 7350
 Wire Wire Line
 	6500 7300 6400 7300
 Wire Wire Line
@@ -850,4 +712,24 @@ U 5536C66B
 F0 "Sensors" 60
 F1 "sensors.sch" 60
 $EndSheet
+Text Label 4950 1050 0    39   ~ 0
+SPI1_NSS
+Text Label 4950 1100 0    39   ~ 0
+SPI1_SCK
+Text Label 4950 1150 0    39   ~ 0
+SPI1_MISO
+Text Label 4950 1200 0    39   ~ 0
+SPI1_MOSI
+Wire Wire Line
+	4950 1050 4900 1050
+Wire Wire Line
+	4950 1100 4900 1100
+Wire Wire Line
+	4950 1150 4900 1150
+Wire Wire Line
+	4950 1200 4900 1200
+Text Label 4950 1000 0    39   ~ 0
+MPU9250_INT
+Wire Wire Line
+	4950 1000 4900 1000
 $EndSCHEMATC
