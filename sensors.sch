@@ -149,50 +149,17 @@ F 3 "" H 4250 2700 60  0000 C CNN
 $EndComp
 Text Label 3750 1950 0    39   ~ 0
 SPI1_MISO
-Wire Wire Line
-	2100 2800 1900 2800
-Wire Wire Line
-	1900 2800 1900 2850
-Wire Wire Line
-	1650 1450 2100 1450
-Wire Wire Line
-	1650 1750 2100 1750
-Wire Wire Line
-	1650 1450 1650 1400
-Wire Wire Line
-	1650 1750 1650 1800
-Connection ~ 1650 1750
-Connection ~ 1650 1450
-Connection ~ 2050 1450
-Wire Wire Line
-	2100 1550 2050 1550
-Wire Wire Line
-	2050 1550 2050 1450
-Wire Wire Line
-	4250 2700 4250 2650
-Wire Wire Line
-	4250 2350 3700 2350
-Wire Wire Line
-	3750 1950 3700 1950
 Text Label 3750 2100 0    39   ~ 0
 SPI1_NSS
-Wire Wire Line
-	3750 2100 3700 2100
 Text Label 3750 1800 0    39   ~ 0
 SPI1_MOSI
 Text Label 3750 1700 0    39   ~ 0
 SPI1_SCK
-Wire Wire Line
-	3750 1800 3700 1800
-Wire Wire Line
-	3750 1700 3700 1700
 NoConn ~ 3700 1450
 NoConn ~ 3700 1550
 NoConn ~ 3700 2450
 Text Label 3750 2250 0    39   ~ 0
 MPU9250_INT
-Wire Wire Line
-	3750 2250 3700 2250
 $Comp
 L MPU-9250 U?
 U 1 1 5536DEAA
@@ -226,8 +193,210 @@ F 3 "" H 3850 2800 60  0000 C CNN
 	1    3850 2800
 	1    0    0    -1  
 $EndComp
+Text Label 5900 1450 2    39   ~ 0
++2.8V
+Text Label 5900 2000 2    39   ~ 0
++2.8V
+Wire Wire Line
+	2100 2800 1900 2800
+Wire Wire Line
+	1900 2800 1900 2850
+Wire Wire Line
+	1650 1450 2050 1450
+Wire Wire Line
+	2050 1450 2100 1450
+Wire Wire Line
+	1650 1750 2100 1750
+Wire Wire Line
+	1650 1450 1650 1400
+Wire Wire Line
+	1650 1750 1650 1800
+Connection ~ 1650 1750
+Connection ~ 1650 1450
+Connection ~ 2050 1450
+Wire Wire Line
+	2100 1550 2050 1550
+Wire Wire Line
+	2050 1550 2050 1450
+Wire Wire Line
+	4250 2700 4250 2650
+Wire Wire Line
+	4250 2350 3700 2350
+Wire Wire Line
+	3750 1950 3700 1950
+Wire Wire Line
+	3750 2100 3700 2100
+Wire Wire Line
+	3750 1800 3700 1800
+Wire Wire Line
+	3750 1700 3700 1700
+Wire Wire Line
+	3750 2250 3700 2250
 Wire Wire Line
 	3850 2800 3700 2800
 Wire Wire Line
 	3700 2700 3850 2700
+Wire Wire Line
+	5900 1450 6050 1450
+Wire Wire Line
+	6050 1450 6200 1450
+Wire Wire Line
+	5900 2000 6050 2000
+Wire Wire Line
+	6050 2000 6200 2000
+$Comp
+L C C?
+U 1 1 5536FB84
+P 6050 2150
+F 0 "C?" H 6075 2250 50  0000 L CNN
+F 1 "4.7u" H 6075 2050 50  0000 L CNN
+F 2 "" H 6088 2000 30  0000 C CNN
+F 3 "" H 6050 2150 60  0000 C CNN
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2300 6200 2300
+$Comp
+L GND #PWR?
+U 1 1 5536FBED
+P 6050 2300
+F 0 "#PWR?" H 6050 2050 50  0001 C CNN
+F 1 "GND" H 6050 2150 50  0000 C CNN
+F 2 "" H 6050 2300 60  0000 C CNN
+F 3 "" H 6050 2300 60  0000 C CNN
+	1    6050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5536FC2A
+P 6050 1750
+F 0 "#PWR?" H 6050 1500 50  0001 C CNN
+F 1 "GND" H 6050 1600 50  0000 C CNN
+F 2 "" H 6050 1750 60  0000 C CNN
+F 3 "" H 6050 1750 60  0000 C CNN
+	1    6050 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 2300
+Connection ~ 6050 2000
+$Comp
+L C C?
+U 1 1 5536FC5F
+P 6050 1600
+F 0 "C?" H 6075 1700 50  0000 L CNN
+F 1 "0.1u" H 6075 1500 50  0000 L CNN
+F 2 "" H 6088 1450 30  0000 C CNN
+F 3 "" H 6050 1600 60  0000 C CNN
+	1    6050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1750 6050 1750
+Connection ~ 6050 1750
+Connection ~ 6050 1450
+$Comp
+L R R?
+U 1 1 5536FCF9
+P 7700 1250
+F 0 "R?" V 7780 1250 50  0000 C CNN
+F 1 "47k" V 7700 1250 50  0000 C CNN
+F 2 "" V 7630 1250 30  0000 C CNN
+F 3 "" H 7700 1250 30  0000 C CNN
+	1    7700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5536FD36
+P 7850 1250
+F 0 "R?" V 7930 1250 50  0000 C CNN
+F 1 "47k" V 7850 1250 50  0000 C CNN
+F 2 "" V 7780 1250 30  0000 C CNN
+F 3 "" H 7850 1250 30  0000 C CNN
+	1    7850 1250
+	1    0    0    -1  
+$EndComp
+Text Label 7950 1000 0    39   ~ 0
++2.8V
+Wire Wire Line
+	7700 1000 7850 1000
+Wire Wire Line
+	7850 1000 7950 1000
+Wire Wire Line
+	7850 1000 7850 1100
+Wire Wire Line
+	7700 1000 7700 1100
+Connection ~ 7850 1000
+Wire Wire Line
+	7650 1450 7700 1450
+Wire Wire Line
+	7650 1550 7850 1550
+Wire Wire Line
+	7850 1550 7850 1400
+Text Label 8300 1300 0    39   ~ 0
++2.8V
+$Comp
+L R R?
+U 1 1 5536FF70
+P 8200 1500
+F 0 "R?" V 8280 1500 50  0000 C CNN
+F 1 "4.7k" V 8200 1500 50  0000 C CNN
+F 2 "" V 8130 1500 30  0000 C CNN
+F 3 "" H 8200 1500 30  0000 C CNN
+	1    8200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1300 8200 1300
+Wire Wire Line
+	8200 1300 8300 1300
+Wire Wire Line
+	8200 1300 8200 1350
+Wire Wire Line
+	8050 1300 8050 1350
+Connection ~ 8200 1300
+Wire Wire Line
+	8050 1650 8050 1700
+Wire Wire Line
+	7650 1700 8050 1700
+Wire Wire Line
+	8050 1700 8350 1700
+Wire Wire Line
+	7650 1800 8200 1800
+Wire Wire Line
+	8200 1800 8350 1800
+Wire Wire Line
+	8200 1800 8200 1650
+Wire Wire Line
+	7700 1450 7700 1400
+Text Label 8350 1700 0    39   ~ 0
+I2C1_SCL
+Text Label 8350 1800 0    39   ~ 0
+I2C1_SDA
+Connection ~ 8200 1800
+Connection ~ 8050 1700
+$Comp
+L VL6180X U?
+U 1 1 553709E6
+P 6600 1700
+F 0 "U?" H 7250 2100 59  0000 C CNN
+F 1 "VL6180X" H 6700 2100 59  0000 C CNN
+F 2 "" H 6800 2300 39  0000 C CNN
+F 3 "" H 6800 2300 39  0000 C CNN
+	1    6600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5536FEA0
+P 8050 1500
+F 0 "R?" V 8130 1500 50  0000 C CNN
+F 1 "4.7k" V 8050 1500 50  0000 C CNN
+F 2 "" V 7980 1500 30  0000 C CNN
+F 3 "" H 8050 1500 30  0000 C CNN
+	1    8050 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
