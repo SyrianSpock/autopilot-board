@@ -60,7 +60,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Speedy the nanocopter autopilot"
 Date ""
 Rev ""
@@ -936,4 +936,10 @@ F 3 "" H 6000 1600 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	6000 1600 6000 1650
+$Sheet
+S 8050 6050 500  150 
+U 55379F3E
+F0 "Power" 59
+F1 "power.sch" 59
+$EndSheet
 $EndSCHEMATC
