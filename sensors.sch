@@ -147,19 +147,9 @@ F 3 "" H 4250 2700 60  0000 C CNN
 	1    4250 2700
 	1    0    0    -1  
 $EndComp
-Text Label 3750 1950 0    39   ~ 0
-SPI1_MISO
-Text Label 3750 2100 0    39   ~ 0
-SPI1_NSS
-Text Label 3750 1800 0    39   ~ 0
-SPI1_MOSI
-Text Label 3750 1700 0    39   ~ 0
-SPI1_SCK
 NoConn ~ 3700 1450
 NoConn ~ 3700 1550
 NoConn ~ 3700 2450
-Text Label 3750 2250 0    39   ~ 0
-MPU9250_INT
 $Comp
 L MPU-9250 U?
 U 1 1 5536DEAA
@@ -193,16 +183,14 @@ F 3 "" H 3850 2800 60  0000 C CNN
 	1    3850 2800
 	1    0    0    -1  
 $EndComp
-Text Label 5900 1600 2    39   ~ 0
-+2.8V
-Text Label 5900 2150 2    39   ~ 0
-+2.8V
 Wire Wire Line
 	2100 2800 1900 2800
 Wire Wire Line
 	1900 2800 1900 2850
 Wire Wire Line
-	1650 1450 2100 1450
+	1650 1450 2050 1450
+Wire Wire Line
+	2050 1450 2100 1450
 Wire Wire Line
 	1650 1750 2100 1750
 Wire Wire Line
@@ -235,9 +223,13 @@ Wire Wire Line
 Wire Wire Line
 	3700 2700 3850 2700
 Wire Wire Line
-	5900 1600 6200 1600
+	5900 1600 6050 1600
 Wire Wire Line
-	5900 2150 6200 2150
+	6050 1600 6200 1600
+Wire Wire Line
+	5900 2150 6050 2150
+Wire Wire Line
+	6050 2150 6200 2150
 $Comp
 L C C?
 U 1 1 5536FB84
@@ -312,10 +304,10 @@ F 3 "" H 7850 1400 30  0000 C CNN
 	1    7850 1400
 	1    0    0    -1  
 $EndComp
-Text Label 7950 1150 0    39   ~ 0
-+2.8V
 Wire Wire Line
-	7700 1150 7950 1150
+	7700 1150 7850 1150
+Wire Wire Line
+	7850 1150 7950 1150
 Wire Wire Line
 	7850 1150 7850 1250
 Wire Wire Line
@@ -327,8 +319,6 @@ Wire Wire Line
 	7650 1700 7850 1700
 Wire Wire Line
 	7850 1700 7850 1550
-Text Label 9300 1050 0    39   ~ 0
-+2.8V
 $Comp
 L R R?
 U 1 1 5536FF70
@@ -408,28 +398,50 @@ Connection ~ 9050 1700
 Wire Wire Line
 	9200 1400 9200 1050
 Wire Wire Line
-	9050 1050 9300 1050
+	9050 1050 9200 1050
+Wire Wire Line
+	9200 1050 9300 1050
 Wire Wire Line
 	9050 1050 9050 1100
 Connection ~ 9200 1050
 Wire Wire Line
 	10150 1600 10150 1550
 Wire Wire Line
-	10150 1550 10400 1550
+	10150 1550 10300 1550
+Wire Wire Line
+	10300 1550 10400 1550
 Wire Wire Line
 	10300 1550 10300 1900
 Wire Wire Line
 	10150 2200 10150 1900
 Connection ~ 10150 2200
 Connection ~ 10300 1550
-Text Label 10400 1550 0    39   ~ 0
-+2.8V
-Text Label 9500 1700 0    39   ~ 0
-I2C1_SCL
 Wire Wire Line
 	9500 1700 9450 1700
-Text Label 10600 2200 0    39   ~ 0
-I2C1_SDA
 Wire Wire Line
 	10600 2200 10550 2200
+Text HLabel 3750 1700 2    39   Input ~ 0
+SPI1_SCK
+Text HLabel 3750 1800 2    39   Input ~ 0
+SPI1_MOSI
+Text HLabel 3750 1950 2    39   Input ~ 0
+SPI1_MISO
+Text HLabel 3750 2100 2    39   Input ~ 0
+SPI1_NSS
+Text HLabel 3750 2250 2    39   Input ~ 0
+MPU9250_INT
+Text HLabel 5900 1600 0    39   Input ~ 0
++2.8V
+Text HLabel 5900 2150 0    39   Input ~ 0
++2.8V
+Text HLabel 7950 1150 2    39   Input ~ 0
++2.8V
+Text HLabel 9300 1050 2    39   Input ~ 0
++2.8V
+Text HLabel 10400 1550 2    39   Input ~ 0
++2.8V
+Text HLabel 10600 2200 2    39   Input ~ 0
+I2C1_SDA
+Text HLabel 9500 1700 2    39   Input ~ 0
+I2C1_SCL
 $EndSCHEMATC

@@ -141,8 +141,6 @@ Wire Wire Line
 Wire Wire Line
 	9550 1900 9750 1900
 NoConn ~ 9350 2100
-Text Label 8100 2100 2    39   ~ 0
-2.8V_EN
 Wire Wire Line
 	8100 2100 8150 2100
 $Comp
@@ -158,8 +156,6 @@ F 3 "" H 7600 2300 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	7600 2300 7600 2250
-Text Label 9750 1900 0    39   ~ 0
-2.8V
 Connection ~ 9550 1900
 $Comp
 L GND #PWR?
@@ -284,8 +280,6 @@ $EndComp
 Wire Wire Line
 	2250 2450 2250 2350
 Connection ~ 2250 1950
-Text Label 1650 1950 2    39   ~ 0
-V_USB
 Wire Wire Line
 	1650 1950 1850 1950
 Wire Wire Line
@@ -349,4 +343,10 @@ Wire Wire Line
 	4250 2250 4250 2150
 Wire Wire Line
 	4250 2150 4150 2150
+Text HLabel 1650 1950 0    39   Input ~ 0
+V_USB
+Text HLabel 8100 2100 0    39   Input ~ 0
++2.8V_EN
+Text HLabel 9750 1900 2    39   Input ~ 0
++2.8V
 $EndSCHEMATC
