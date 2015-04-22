@@ -188,9 +188,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 2800 1900 2850
 Wire Wire Line
-	1650 1450 2050 1450
-Wire Wire Line
-	2050 1450 2100 1450
+	1650 1450 2100 1450
 Wire Wire Line
 	1650 1750 2100 1750
 Wire Wire Line
@@ -223,13 +221,9 @@ Wire Wire Line
 Wire Wire Line
 	3700 2700 3850 2700
 Wire Wire Line
-	5900 1600 6050 1600
+	5900 1600 6200 1600
 Wire Wire Line
-	6050 1600 6200 1600
-Wire Wire Line
-	5900 2150 6050 2150
-Wire Wire Line
-	6050 2150 6200 2150
+	5900 2150 6200 2150
 $Comp
 L C C?
 U 1 1 5536FB84
@@ -307,9 +301,7 @@ $EndComp
 Wire Wire Line
 	7700 1150 7850 1150
 Wire Wire Line
-	7850 1150 7950 1150
-Wire Wire Line
-	7850 1150 7850 1250
+	7850 1100 7850 1250
 Wire Wire Line
 	7700 1150 7700 1250
 Connection ~ 7850 1150
@@ -319,17 +311,6 @@ Wire Wire Line
 	7650 1700 7850 1700
 Wire Wire Line
 	7850 1700 7850 1550
-$Comp
-L R R?
-U 1 1 5536FF70
-P 10150 1750
-F 0 "R?" V 10230 1750 50  0000 C CNN
-F 1 "2.2k" V 10150 1750 50  0000 C CNN
-F 2 "" V 10080 1750 30  0000 C CNN
-F 3 "" H 10150 1750 30  0000 C CNN
-	1    10150 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7650 1850 7700 1850
 Wire Wire Line
@@ -337,9 +318,9 @@ Wire Wire Line
 Wire Wire Line
 	7700 1600 7700 1550
 Text Label 7700 1850 0    39   ~ 0
-I2C1_SCL_2.8V
+I2C1_SCL
 Text Label 7700 1950 0    39   ~ 0
-I2C1_SDA_2.8V
+I2C1_SDA
 $Comp
 L VL6180X U?
 U 1 1 553709E6
@@ -351,75 +332,6 @@ F 3 "" H 6800 2450 39  0000 C CNN
 	1    6600 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R?
-U 1 1 5536FEA0
-P 9050 1250
-F 0 "R?" V 9130 1250 50  0000 C CNN
-F 1 "2.2k" V 9050 1250 50  0000 C CNN
-F 2 "" V 8980 1250 30  0000 C CNN
-F 3 "" H 9050 1250 30  0000 C CNN
-	1    9050 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSS138 Q?
-U 1 1 5537886E
-P 9250 1600
-F 0 "Q?" H 9450 1675 50  0000 L CNN
-F 1 "BSS138" H 9450 1600 50  0000 L CNN
-F 2 "SOT-23" H 9450 1525 50  0000 L CIN
-F 3 "" H 9250 1600 50  0000 L CNN
-	1    9250 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L BSS138 Q?
-U 1 1 553788BF
-P 10350 2100
-F 0 "Q?" H 10550 2175 50  0000 L CNN
-F 1 "BSS138" H 10550 2100 50  0000 L CNN
-F 2 "SOT-23" H 10550 2025 50  0000 L CIN
-F 3 "" H 10350 2100 50  0000 L CNN
-	1    10350 2100
-	0    1    1    0   
-$EndComp
-Text Label 9000 1700 2    39   ~ 0
-I2C1_SCL_2.8V
-Text Label 10100 2200 2    39   ~ 0
-I2C1_SDA_2.8V
-Wire Wire Line
-	9000 1700 9050 1700
-Wire Wire Line
-	10100 2200 10150 2200
-Wire Wire Line
-	9050 1700 9050 1400
-Connection ~ 9050 1700
-Wire Wire Line
-	9200 1400 9200 1050
-Wire Wire Line
-	9050 1050 9200 1050
-Wire Wire Line
-	9200 1050 9300 1050
-Wire Wire Line
-	9050 1050 9050 1100
-Connection ~ 9200 1050
-Wire Wire Line
-	10150 1600 10150 1550
-Wire Wire Line
-	10150 1550 10300 1550
-Wire Wire Line
-	10300 1550 10400 1550
-Wire Wire Line
-	10300 1550 10300 1900
-Wire Wire Line
-	10150 2200 10150 1900
-Connection ~ 10150 2200
-Connection ~ 10300 1550
-Wire Wire Line
-	9500 1700 9450 1700
-Wire Wire Line
-	10600 2200 10550 2200
 Text HLabel 3750 1700 2    39   Input ~ 0
 SPI1_SCK
 Text HLabel 3750 1800 2    39   Input ~ 0
@@ -430,18 +342,41 @@ Text HLabel 3750 2100 2    39   Input ~ 0
 SPI1_NSS
 Text HLabel 3750 2250 2    39   Input ~ 0
 MPU9250_INT
-Text HLabel 5900 1600 0    39   Input ~ 0
-+2.8V
-Text HLabel 5900 2150 0    39   Input ~ 0
-+2.8V
-Text HLabel 7950 1150 2    39   Input ~ 0
-+2.8V
-Text HLabel 9300 1050 2    39   Input ~ 0
-+2.8V
-Text HLabel 10400 1550 2    39   Input ~ 0
-+2.8V
-Text HLabel 10600 2200 2    39   Input ~ 0
-I2C1_SDA
-Text HLabel 9500 1700 2    39   Input ~ 0
-I2C1_SCL
+$Comp
+L VCC #PWR?
+U 1 1 55382F10
+P 7850 1100
+F 0 "#PWR?" H 7850 950 50  0001 C CNN
+F 1 "VCC" H 7850 1250 50  0000 C CNN
+F 2 "" H 7850 1100 60  0000 C CNN
+F 3 "" H 7850 1100 60  0000 C CNN
+	1    7850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 55382F46
+P 5900 1550
+F 0 "#PWR?" H 5900 1400 50  0001 C CNN
+F 1 "VCC" H 5900 1700 50  0000 C CNN
+F 2 "" H 5900 1550 60  0000 C CNN
+F 3 "" H 5900 1550 60  0000 C CNN
+	1    5900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 55382F63
+P 5900 2100
+F 0 "#PWR?" H 5900 1950 50  0001 C CNN
+F 1 "VCC" H 5900 2250 50  0000 C CNN
+F 2 "" H 5900 2100 60  0000 C CNN
+F 3 "" H 5900 2100 60  0000 C CNN
+	1    5900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2100 5900 2150
+Wire Wire Line
+	5900 1550 5900 1600
 $EndSCHEMATC
