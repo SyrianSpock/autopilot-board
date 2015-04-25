@@ -1,4 +1,4 @@
-update=Sam 25 Apr 2015 14:58:49 CEST
+update=Sam 25 Apr 2015 15:55:04 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -87,3 +87,5 @@ LibName55=kicad-lib/components/power
 LibName56=kicad-lib/components/_sensors
 LibName57=kicad-lib/components/_stm32
 LibName58=kicad-lib/components/_wireless
+LibName59=kicad-lib/components/_power
+LibName60=kicad-lib/components/_motor_drivers

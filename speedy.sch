@@ -56,6 +56,8 @@ LIBS:phoenix
 LIBS:_sensors
 LIBS:_stm32
 LIBS:_wireless
+LIBS:_power
+LIBS:_motor_drivers
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
