@@ -1,0 +1,520 @@
+EESchema Schematic File Version 2
+LIBS:speedy-cache
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:video
+LIBS:stm32
+LIBS:msp430
+LIBS:motor_drivers
+LIBS:ac-dc
+LIBS:dc-dc
+LIBS:ftdi
+LIBS:nordicsemi
+LIBS:sensors
+LIBS:transf
+LIBS:_antenna
+LIBS:_audio
+LIBS:_charge-pump-regulators
+LIBS:Comp2014
+LIBS:_connectors
+LIBS:cvra
+LIBS:_div
+LIBS:_ic
+LIBS:IRF
+LIBS:_linear-regulators
+LIBS:Mec
+LIBS:National
+LIBS:phoenix
+LIBS:_sensors
+LIBS:_stm32
+LIBS:_wireless
+LIBS:_power
+LIBS:_motor_drivers
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NRF24R01+ U?
+U 1 1 55438B0D
+P 5175 3125
+F 0 "U?" H 5175 3125 60  0000 C CNN
+F 1 "NRF24L01+" H 5225 3275 60  0000 C CNN
+F 2 "" H 5175 3125 60  0000 C CNN
+F 3 "" H 5175 3125 60  0000 C CNN
+	1    5175 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 55438B1A
+P 3675 2525
+F 0 "#PWR?" H 3675 2375 50  0001 C CNN
+F 1 "VCC" H 3675 2675 50  0000 C CNN
+F 2 "" H 3675 2525 60  0000 C CNN
+F 3 "" H 3675 2525 60  0000 C CNN
+	1    3675 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55438B20
+P 3675 3475
+F 0 "#PWR?" H 3675 3225 50  0001 C CNN
+F 1 "GND" H 3675 3325 50  0000 C CNN
+F 2 "" H 3675 3475 60  0000 C CNN
+F 3 "" H 3675 3475 60  0000 C CNN
+	1    3675 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 55438B26
+P 4225 3475
+F 0 "R?" V 4305 3475 50  0000 C CNN
+F 1 "22k" V 4225 3475 50  0000 C CNN
+F 2 "" V 4155 3475 30  0000 C CNN
+F 3 "" H 4225 3475 30  0000 C CNN
+	1    4225 3475
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55438B2D
+P 4075 4275
+F 0 "#PWR?" H 4075 4025 50  0001 C CNN
+F 1 "GND" H 4075 4125 50  0000 C CNN
+F 2 "" H 4075 4275 60  0000 C CNN
+F 3 "" H 4075 4275 60  0000 C CNN
+	1    4075 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55438B33
+P 6175 2950
+F 0 "#PWR?" H 6175 2700 50  0001 C CNN
+F 1 "GND" H 6175 2800 50  0000 C CNN
+F 2 "" H 6175 2950 60  0000 C CNN
+F 3 "" H 6175 2950 60  0000 C CNN
+	1    6175 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55438B39
+P 6525 2950
+F 0 "#PWR?" H 6525 2700 50  0001 C CNN
+F 1 "GND" H 6525 2800 50  0000 C CNN
+F 2 "" H 6525 2950 60  0000 C CNN
+F 3 "" H 6525 2950 60  0000 C CNN
+	1    6525 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 55438B3F
+P 6025 2525
+F 0 "L?" H 6055 2565 50  0000 L CNN
+F 1 "8.2nH" H 6055 2485 50  0000 L CNN
+F 2 "" H 6025 2525 60  0000 C CNN
+F 3 "" H 6025 2525 60  0000 C CNN
+	1    6025 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 55438B46
+P 6250 2425
+F 0 "L?" V 6325 2475 50  0000 L CNN
+F 1 "3.9nH" V 6325 2225 50  0000 L CNN
+F 2 "" H 6250 2425 60  0000 C CNN
+F 3 "" H 6250 2425 60  0000 C CNN
+	1    6250 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 55438B4D
+P 6250 2625
+F 0 "L?" V 6200 2675 50  0000 L CNN
+F 1 "2.7nH" V 6200 2425 50  0000 L CNN
+F 2 "" H 6250 2625 60  0000 C CNN
+F 3 "" H 6250 2625 60  0000 C CNN
+	1    6250 2625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B54
+P 6650 2425
+F 0 "C?" V 6725 2475 50  0000 L CNN
+F 1 "1.5pF" V 6725 2175 50  0000 L CNN
+F 2 "" H 6650 2425 60  0000 C CNN
+F 3 "" H 6650 2425 60  0000 C CNN
+	1    6650 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55438B5B
+P 6900 2675
+F 0 "#PWR?" H 6900 2425 50  0001 C CNN
+F 1 "GND" H 6900 2525 50  0000 C CNN
+F 2 "" H 6900 2675 60  0000 C CNN
+F 3 "" H 6900 2675 60  0000 C CNN
+	1    6900 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B61
+P 6175 2850
+F 0 "C?" H 6185 2920 50  0000 L CNN
+F 1 "2.2nF" H 6185 2770 50  0000 L CNN
+F 2 "" H 6175 2850 60  0000 C CNN
+F 3 "" H 6175 2850 60  0000 C CNN
+	1    6175 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B68
+P 6525 2850
+F 0 "C?" H 6535 2920 50  0000 L CNN
+F 1 "4.7pF" H 6535 2770 50  0000 L CNN
+F 2 "" H 6525 2850 60  0000 C CNN
+F 3 "" H 6525 2850 60  0000 C CNN
+	1    6525 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal_Small Y?
+U 1 1 55438B6F
+P 4075 4000
+F 0 "Y?" H 4075 4100 50  0000 C CNN
+F 1 "16MHz" H 4075 3900 50  0000 C CNN
+F 2 "" H 4075 4000 60  0000 C CNN
+F 3 "" H 4075 4000 60  0000 C CNN
+	1    4075 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 55438B76
+P 4075 3725
+F 0 "R?" V 4155 3725 50  0000 C CNN
+F 1 "1M" V 4075 3725 50  0000 C CNN
+F 2 "" V 4005 3725 30  0000 C CNN
+F 3 "" H 4075 3725 30  0000 C CNN
+	1    4075 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B7D
+P 3775 4150
+F 0 "C?" H 3785 4220 50  0000 L CNN
+F 1 "22pF" H 3785 4070 50  0000 L CNN
+F 2 "" H 3775 4150 60  0000 C CNN
+F 3 "" H 3775 4150 60  0000 C CNN
+	1    3775 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B84
+P 4375 4150
+F 0 "C?" H 4385 4220 50  0000 L CNN
+F 1 "22pF" H 4385 4070 50  0000 L CNN
+F 2 "" H 4375 4150 60  0000 C CNN
+F 3 "" H 4375 4150 60  0000 C CNN
+	1    4375 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B8B
+P 3900 3325
+F 0 "C?" V 3950 3200 50  0000 L CNN
+F 1 "33nF" V 3850 3100 50  0000 L CNN
+F 2 "" H 3900 3325 60  0000 C CNN
+F 3 "" H 3900 3325 60  0000 C CNN
+	1    3900 3325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B92
+P 6900 2575
+F 0 "C?" H 6910 2645 50  0000 L CNN
+F 1 "1pF" H 6910 2495 50  0000 L CNN
+F 2 "" H 6900 2575 60  0000 C CNN
+F 3 "" H 6900 2575 60  0000 C CNN
+	1    6900 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438B99
+P 3675 2700
+F 0 "C?" H 3685 2770 50  0000 L CNN
+F 1 "0.1uF" H 3685 2620 50  0000 L CNN
+F 2 "" H 3675 2700 60  0000 C CNN
+F 3 "" H 3675 2700 60  0000 C CNN
+	1    3675 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 55438BA0
+P 4200 2700
+F 0 "C?" H 4210 2770 50  0000 L CNN
+F 1 "1nF" H 4210 2620 50  0000 L CNN
+F 2 "" H 4200 2700 60  0000 C CNN
+F 3 "" H 4200 2700 60  0000 C CNN
+	1    4200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55438BA7
+P 3675 2875
+F 0 "#PWR?" H 3675 2625 50  0001 C CNN
+F 1 "GND" H 3675 2725 50  0000 C CNN
+F 2 "" H 3675 2875 60  0000 C CNN
+F 3 "" H 3675 2875 60  0000 C CNN
+	1    3675 2875
+	1    0    0    -1  
+$EndComp
+Connection ~ 4075 4275
+Wire Wire Line
+	3775 4275 4075 4275
+Wire Wire Line
+	4075 4275 4375 4275
+Connection ~ 3775 4000
+Connection ~ 4375 4000
+Connection ~ 4375 3725
+Connection ~ 3775 3725
+Wire Wire Line
+	3925 3725 3775 3725
+Connection ~ 3675 3475
+Wire Wire Line
+	3675 3475 4075 3475
+Wire Wire Line
+	4425 3475 4375 3475
+Wire Wire Line
+	3675 3325 3800 3325
+Wire Wire Line
+	4425 3325 4000 3325
+Connection ~ 3675 2525
+Wire Wire Line
+	3675 2800 3675 2875
+Wire Wire Line
+	3675 3325 3675 3475
+Connection ~ 4200 2525
+Wire Wire Line
+	3675 2525 3675 2600
+Connection ~ 4375 2525
+Wire Wire Line
+	4200 2525 4200 2600
+Connection ~ 4375 2625
+Wire Wire Line
+	4425 2625 4375 2625
+Wire Wire Line
+	3675 2525 3950 2525
+Wire Wire Line
+	3950 2525 4200 2525
+Wire Wire Line
+	4200 2525 4375 2525
+Wire Wire Line
+	4375 2525 4425 2525
+Wire Wire Line
+	4375 2525 4375 2625
+Wire Wire Line
+	4375 2625 4375 2725
+Wire Wire Line
+	4375 2725 4425 2725
+Connection ~ 4375 2975
+Wire Wire Line
+	4375 2975 4425 2975
+Connection ~ 4375 3075
+Wire Wire Line
+	4375 3075 4425 3075
+Wire Wire Line
+	4375 3175 4425 3175
+Wire Wire Line
+	4375 2875 4375 2975
+Wire Wire Line
+	4375 2975 4375 3075
+Wire Wire Line
+	4375 3075 4375 3175
+Wire Wire Line
+	3675 2875 3950 2875
+Wire Wire Line
+	3950 2875 4200 2875
+Wire Wire Line
+	4200 2875 4375 2875
+Wire Wire Line
+	4375 2875 4425 2875
+Wire Wire Line
+	3775 3625 3775 3725
+Wire Wire Line
+	3775 3725 3775 4000
+Wire Wire Line
+	3775 4000 3775 4050
+Wire Wire Line
+	4425 3625 3775 3625
+Wire Wire Line
+	4375 3725 4375 4000
+Wire Wire Line
+	4375 4000 4375 4050
+Wire Wire Line
+	4225 3725 4375 3725
+Wire Wire Line
+	4375 3725 4425 3725
+Wire Wire Line
+	5975 3725 5925 3725
+Wire Wire Line
+	5975 3225 5925 3225
+Wire Wire Line
+	5925 3625 5975 3625
+Wire Wire Line
+	5975 3525 5925 3525
+Wire Wire Line
+	5925 3425 5975 3425
+Wire Wire Line
+	5975 3325 5925 3325
+Wire Wire Line
+	6525 2625 6525 2725
+Wire Wire Line
+	6525 2725 6525 2750
+Wire Wire Line
+	5925 2725 6175 2725
+Wire Wire Line
+	6175 2725 6525 2725
+Wire Wire Line
+	6175 2725 6175 2750
+Connection ~ 6175 2725
+Wire Wire Line
+	5925 2625 6025 2625
+Wire Wire Line
+	6025 2625 6150 2625
+Wire Wire Line
+	5925 2425 6025 2425
+Wire Wire Line
+	6025 2425 6150 2425
+Wire Wire Line
+	6350 2625 6525 2625
+Connection ~ 6525 2725
+Wire Wire Line
+	6550 2425 6350 2425
+Wire Wire Line
+	5925 2425 5925 2525
+Connection ~ 6025 2425
+Connection ~ 6025 2625
+Wire Wire Line
+	3775 4000 3975 4000
+Wire Wire Line
+	4175 4000 4375 4000
+Wire Wire Line
+	3775 4250 3775 4275
+Wire Wire Line
+	4375 4275 4375 4250
+Connection ~ 3675 2875
+Connection ~ 4375 2875
+Wire Wire Line
+	4200 2800 4200 2875
+Connection ~ 4200 2875
+$Comp
+L C_Small C?
+U 1 1 55438BFC
+P 3950 2700
+F 0 "C?" H 3960 2770 50  0000 L CNN
+F 1 "10nF" H 3960 2620 50  0000 L CNN
+F 2 "" H 3950 2700 60  0000 C CNN
+F 3 "" H 3950 2700 60  0000 C CNN
+	1    3950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2800 3950 2875
+Connection ~ 3950 2875
+Wire Wire Line
+	3950 2600 3950 2525
+Connection ~ 3950 2525
+$Comp
+L ANTENNA A?
+U 1 1 55438C07
+P 7475 2625
+F 0 "A?" H 7575 2475 60  0000 C CNN
+F 1 "ANTENNA" H 7475 2925 60  0001 C CNN
+F 2 "" H 7475 2625 60  0000 C CNN
+F 3 "" H 7475 2625 60  0000 C CNN
+	1    7475 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2475 6900 2425
+Wire Wire Line
+	6750 2425 6900 2425
+Wire Wire Line
+	6900 2425 7225 2425
+Wire Wire Line
+	7475 2925 7225 2925
+Wire Wire Line
+	7225 2925 7225 2425
+Connection ~ 6900 2425
+Text Notes 7275 2400 0    39   ~ 0
+50ohm 2.4GHz\nRF antenna
+Text HLabel 5975 3225 2    39   Input ~ 0
+NRF24L01+_EN
+Text HLabel 5975 3325 2    39   Input ~ 0
+NRF24L01+_CS
+Text HLabel 5975 3425 2    39   Input ~ 0
+SPI2_SCK
+Text HLabel 5975 3525 2    39   Input ~ 0
+SPI2_MOSI
+Text HLabel 5975 3625 2    39   Input ~ 0
+SPI2_MISO
+Text HLabel 5975 3725 2    39   Input ~ 0
+NRF24L01+_INT
+$EndSCHEMATC
