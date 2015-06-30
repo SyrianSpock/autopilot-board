@@ -470,7 +470,7 @@ U 1 1 5579456F
 P 6125 3225
 F 0 "W8" H 6275 3250 40  0000 C CNN
 F 1 "TEST" H 6125 3225 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 6125 3225 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3225 60  0001 C CNN
 F 3 "" H 6125 3225 60  0000 C CNN
 	1    6125 3225
 	1    0    0    -1  
@@ -481,7 +481,7 @@ U 1 1 5579499D
 P 6125 3325
 F 0 "W9" H 6275 3350 40  0000 C CNN
 F 1 "TEST" H 6125 3325 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 6125 3325 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3325 60  0001 C CNN
 F 3 "" H 6125 3325 60  0000 C CNN
 	1    6125 3325
 	1    0    0    -1  
@@ -492,7 +492,7 @@ U 1 1 557949DF
 P 6125 3425
 F 0 "W10" H 6275 3450 40  0000 C CNN
 F 1 "TEST" H 6125 3425 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 6125 3425 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3425 60  0001 C CNN
 F 3 "" H 6125 3425 60  0000 C CNN
 	1    6125 3425
 	1    0    0    -1  
@@ -503,7 +503,7 @@ U 1 1 55794A1F
 P 6125 3525
 F 0 "W11" H 6275 3550 40  0000 C CNN
 F 1 "TEST" H 6125 3525 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 6125 3525 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3525 60  0001 C CNN
 F 3 "" H 6125 3525 60  0000 C CNN
 	1    6125 3525
 	1    0    0    -1  
@@ -514,7 +514,7 @@ U 1 1 55794A65
 P 6125 3625
 F 0 "W12" H 6275 3650 40  0000 C CNN
 F 1 "TEST" H 6125 3625 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 6125 3625 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3625 60  0001 C CNN
 F 3 "" H 6125 3625 60  0000 C CNN
 	1    6125 3625
 	1    0    0    -1  
@@ -525,7 +525,7 @@ U 1 1 55794AA9
 P 6125 3725
 F 0 "W13" H 6275 3750 40  0000 C CNN
 F 1 "TEST" H 6125 3725 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 6125 3725 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3725 60  0001 C CNN
 F 3 "" H 6125 3725 60  0000 C CNN
 	1    6125 3725
 	1    0    0    -1  

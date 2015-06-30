@@ -436,7 +436,7 @@ U 1 1 55799AAF
 P 3575 2125
 F 0 "W3" H 3725 2150 40  0000 C CNN
 F 1 "TEST" H 3575 2125 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3575 2125 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2125 60  0001 C CNN
 F 3 "" H 3575 2125 60  0000 C CNN
 	1    3575 2125
 	1    0    0    -1  
@@ -447,7 +447,7 @@ U 1 1 55799BD9
 P 3575 2225
 F 0 "W4" H 3725 2250 40  0000 C CNN
 F 1 "TEST" H 3575 2225 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3575 2225 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2225 60  0001 C CNN
 F 3 "" H 3575 2225 60  0000 C CNN
 	1    3575 2225
 	1    0    0    -1  
@@ -458,7 +458,7 @@ U 1 1 55799C09
 P 3575 2375
 F 0 "W5" H 3725 2400 40  0000 C CNN
 F 1 "TEST" H 3575 2375 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3575 2375 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2375 60  0001 C CNN
 F 3 "" H 3575 2375 60  0000 C CNN
 	1    3575 2375
 	1    0    0    -1  
@@ -469,7 +469,7 @@ U 1 1 55799C3F
 P 3575 2525
 F 0 "W6" H 3725 2550 40  0000 C CNN
 F 1 "TEST" H 3575 2525 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3575 2525 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2525 60  0001 C CNN
 F 3 "" H 3575 2525 60  0000 C CNN
 	1    3575 2525
 	1    0    0    -1  
@@ -480,7 +480,7 @@ U 1 1 55799C79
 P 3575 2675
 F 0 "W7" H 3725 2700 40  0000 C CNN
 F 1 "TEST" H 3575 2675 20  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 3575 2675 60  0001 C CNN
+F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2675 60  0001 C CNN
 F 3 "" H 3575 2675 60  0000 C CNN
 	1    3575 2675
 	1    0    0    -1  
