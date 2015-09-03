@@ -1,27 +1,24 @@
-Speedy the nanocopter autopilot
-===============================
+Speedy the nanocopter autopilot board
+=====================================
 
-The aim of this project is to design an autopilot board to enable the control of a small quadrotor.
+The aim of this project is to design an autopilot board to enable the control of a small quadrotor that can be tracked through visual sensors.
 
 ### Specifications
-* STM32F4 in BGA package (to make it as small as possible)
-* Four full H bridges: one bridge per motor to allow braking of the motors and reverse mode
+* Cortex M4 MCU
+* Two full H bridges: one half bridge per motor to allow active braking of the motors
 * IMU:
     - MPU9250 (9 axis): accelerometer, gyroscope and magnetometer
-    - Barometer (to be defined)
+    - MS5611 barometer
 * Ground distance sensor:
-    - For landing / ground approch
-    - Use an ST VL6180X
-* SD card for logging
+    - ST VL6180X for landing / ground approch
 * Radio module:
-    - Telemetry downlink
-    - Telecommand override
-* USB interface
+    - NRF24L01+ for telemetry and telecommand
+* USB interface (for DFU programming / serial interface)
 * Battery management unit
 	- Monitor battery (current, voltage)
 	- Supply power to the board from a LiPo (1S) input
 	- Recharge the battery through USB
 
-### Block diagram
+### Block diagram (outdated)
 ![Block diagram](doc/speedy_autopilot.png)
 Parts in grey are external modules.
