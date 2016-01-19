@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:speedy-rescue
 LIBS:speedy-cache
 LIBS:power
 LIBS:device
@@ -174,15 +173,15 @@ F 3 "" H 9100 3250 39  0000 C CNN
 	1    8900 2650
 	1    0    0    -1  
 $EndComp
-Text HLabel 3825 2125 2    39   Input ~ 0
+Text HLabel 3425 2125 2    39   Input ~ 0
 SPI1_SCK
-Text HLabel 3825 2225 2    39   Input ~ 0
+Text HLabel 3425 2225 2    39   Input ~ 0
 SPI1_MOSI
-Text HLabel 3825 2375 2    39   Input ~ 0
+Text HLabel 3425 2375 2    39   Input ~ 0
 SPI1_MISO
-Text HLabel 3825 2525 2    39   Input ~ 0
+Text HLabel 3425 2525 2    39   Input ~ 0
 MPU9250_CS
-Text HLabel 3825 2675 2    39   Input ~ 0
+Text HLabel 3425 2675 2    39   Input ~ 0
 MPU9250_INT
 $Comp
 L MS5611-01BA U5
@@ -325,15 +324,15 @@ Wire Wire Line
 Wire Wire Line
 	3750 2775 3375 2775
 Wire Wire Line
-	3825 2375 3775 2375
+	3425 2375 3375 2375
 Wire Wire Line
-	3825 2525 3775 2525
+	3425 2525 3375 2525
 Wire Wire Line
-	3825 2225 3775 2225
+	3425 2225 3375 2225
 Wire Wire Line
-	3825 2125 3775 2125
+	3425 2125 3375 2125
 Wire Wire Line
-	3825 2675 3775 2675
+	3425 2675 3375 2675
 Wire Wire Line
 	3525 3225 3375 3225
 Wire Wire Line
@@ -430,61 +429,6 @@ Text GLabel 8200 2950 0    39   Input ~ 0
 VCCA
 Text GLabel 10275 1950 2    39   Input ~ 0
 VCCA
-$Comp
-L TEST W3
-U 1 1 55799AAF
-P 3575 2125
-F 0 "W3" H 3725 2150 40  0000 C CNN
-F 1 "TEST" H 3575 2125 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2125 60  0001 C CNN
-F 3 "" H 3575 2125 60  0000 C CNN
-	1    3575 2125
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W4
-U 1 1 55799BD9
-P 3575 2225
-F 0 "W4" H 3725 2250 40  0000 C CNN
-F 1 "TEST" H 3575 2225 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2225 60  0001 C CNN
-F 3 "" H 3575 2225 60  0000 C CNN
-	1    3575 2225
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W5
-U 1 1 55799C09
-P 3575 2375
-F 0 "W5" H 3725 2400 40  0000 C CNN
-F 1 "TEST" H 3575 2375 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2375 60  0001 C CNN
-F 3 "" H 3575 2375 60  0000 C CNN
-	1    3575 2375
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W6
-U 1 1 55799C3F
-P 3575 2525
-F 0 "W6" H 3725 2550 40  0000 C CNN
-F 1 "TEST" H 3575 2525 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2525 60  0001 C CNN
-F 3 "" H 3575 2525 60  0000 C CNN
-	1    3575 2525
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W7
-U 1 1 55799C79
-P 3575 2675
-F 0 "W7" H 3725 2700 40  0000 C CNN
-F 1 "TEST" H 3575 2675 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 3575 2675 60  0001 C CNN
-F 3 "" H 3575 2675 60  0000 C CNN
-	1    3575 2675
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	475  4075 11225 4075
 Wire Wire Line

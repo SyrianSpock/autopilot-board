@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:speedy-rescue
 LIBS:speedy-cache
 LIBS:power
 LIBS:device
@@ -373,17 +372,17 @@ Wire Wire Line
 Wire Wire Line
 	4225 3725 4425 3725
 Wire Wire Line
-	6375 3725 6325 3725
+	5975 3725 5925 3725
 Wire Wire Line
-	6375 3225 6325 3225
+	5975 3225 5925 3225
 Wire Wire Line
-	6325 3625 6375 3625
+	5925 3625 5975 3625
 Wire Wire Line
-	6375 3525 6325 3525
+	5975 3525 5925 3525
 Wire Wire Line
-	6325 3425 6375 3425
+	5925 3425 5975 3425
 Wire Wire Line
-	6375 3325 6325 3325
+	5975 3325 5925 3325
 Wire Wire Line
 	6525 2625 6525 2750
 Wire Wire Line
@@ -433,103 +432,33 @@ Connection ~ 3950 2525
 $Comp
 L ANTENNA A1
 U 1 1 55438C07
-P 7475 2625
-F 0 "A1" H 7575 2475 60  0000 C CNN
-F 1 "ANTENNA" H 7475 2925 60  0001 C CNN
-F 2 "_div:_ANT-2.45-CHP" H 7475 2625 60  0001 C CNN
-F 3 "" H 7475 2625 60  0000 C CNN
-	1    7475 2625
+P 7475 2125
+F 0 "A1" H 7575 1975 60  0000 C CNN
+F 1 "ANTENNA" H 7475 2425 60  0001 C CNN
+F 2 "_div:_ANT-2.45-CHP" H 7475 2125 60  0001 C CNN
+F 3 "" H 7475 2125 60  0000 C CNN
+	1    7475 2125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6900 2475 6900 2425
 Wire Wire Line
-	6750 2425 7225 2425
-Wire Wire Line
-	7475 2925 7225 2925
-Wire Wire Line
-	7225 2925 7225 2425
+	6750 2425 7475 2425
 Connection ~ 6900 2425
-Text Notes 7275 2400 0    39   ~ 0
+Text Notes 7750 2125 0    39   ~ 0
 50ohm 2.4GHz\nRF antenna
-Text HLabel 6375 3225 2    39   Input ~ 0
+Text HLabel 5975 3225 2    39   Input ~ 0
 NRF24L01+_EN
-Text HLabel 6375 3325 2    39   Input ~ 0
+Text HLabel 5975 3325 2    39   Input ~ 0
 NRF24L01+_CS
-Text HLabel 6375 3425 2    39   Input ~ 0
+Text HLabel 5975 3425 2    39   Input ~ 0
 SPI2_SCK
-Text HLabel 6375 3525 2    39   Input ~ 0
+Text HLabel 5975 3525 2    39   Input ~ 0
 SPI2_MOSI
-Text HLabel 6375 3625 2    39   Input ~ 0
+Text HLabel 5975 3625 2    39   Input ~ 0
 SPI2_MISO
-Text HLabel 6375 3725 2    39   Input ~ 0
+Text HLabel 5975 3725 2    39   Input ~ 0
 NRF24L01+_INT
-$Comp
-L TEST W8
-U 1 1 5579456F
-P 6125 3225
-F 0 "W8" H 6275 3250 40  0000 C CNN
-F 1 "TEST" H 6125 3225 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3225 60  0001 C CNN
-F 3 "" H 6125 3225 60  0000 C CNN
-	1    6125 3225
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W9
-U 1 1 5579499D
-P 6125 3325
-F 0 "W9" H 6275 3350 40  0000 C CNN
-F 1 "TEST" H 6125 3325 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3325 60  0001 C CNN
-F 3 "" H 6125 3325 60  0000 C CNN
-	1    6125 3325
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W10
-U 1 1 557949DF
-P 6125 3425
-F 0 "W10" H 6275 3450 40  0000 C CNN
-F 1 "TEST" H 6125 3425 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3425 60  0001 C CNN
-F 3 "" H 6125 3425 60  0000 C CNN
-	1    6125 3425
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W11
-U 1 1 55794A1F
-P 6125 3525
-F 0 "W11" H 6275 3550 40  0000 C CNN
-F 1 "TEST" H 6125 3525 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3525 60  0001 C CNN
-F 3 "" H 6125 3525 60  0000 C CNN
-	1    6125 3525
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W12
-U 1 1 55794A65
-P 6125 3625
-F 0 "W12" H 6275 3650 40  0000 C CNN
-F 1 "TEST" H 6125 3625 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3625 60  0001 C CNN
-F 3 "" H 6125 3625 60  0000 C CNN
-	1    6125 3625
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST W13
-U 1 1 55794AA9
-P 6125 3725
-F 0 "W13" H 6275 3750 40  0000 C CNN
-F 1 "TEST" H 6125 3725 20  0000 C CNN
-F 2 "_std:Measurement_Point_Round-SMD-Pad_Small" H 6125 3725 60  0001 C CNN
-F 3 "" H 6125 3725 60  0000 C CNN
-	1    6125 3725
-	1    0    0    -1  
-$EndComp
 $Comp
 L XTAL-SMD-4-PADS X2
 U 1 1 558EB9B5
