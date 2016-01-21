@@ -162,28 +162,6 @@ F 3 "" H 1750 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
-U 1 1 55369A15
-P 2100 1650
-F 0 "R2" V 2180 1650 50  0000 C CNN
-F 1 "10k" V 2100 1650 50  0000 C CNN
-F 2 "_std:_0402" V 2030 1650 30  0001 C CNN
-F 3 "" H 2100 1650 30  0000 C CNN
-	1    2100 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR08
-U 1 1 55369B95
-P 1950 1850
-F 0 "#PWR08" H 1950 1600 50  0001 C CNN
-F 1 "GND" H 1950 1700 50  0000 C CNN
-F 2 "" H 1950 1850 60  0000 C CNN
-F 3 "" H 1950 1850 60  0000 C CNN
-	1    1950 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR09
 U 1 1 553697B0
 P 4775 7450
@@ -486,7 +464,7 @@ Text Label 3875 3250 0    39   ~ 0
 MOTOR_1_EN
 Text Label 3875 3350 0    39   ~ 0
 MOTOR_2_EN
-Text Label 3875 3450 0    39   ~ 0
+Text Label 3875 6450 0    39   ~ 0
 MOTOR_3_EN
 Text Label 3875 3750 0    39   ~ 0
 MOTOR_4_EN
@@ -773,8 +751,6 @@ Text Label 3875 2850 0    39   ~ 0
 STM32F4_TMS
 Text Label 3875 2950 0    39   ~ 0
 STM32F4_TCK
-Text Notes 2225 1775 0    39   ~ 0
-Boot from\nflash
 $Comp
 L LED-RESCUE-speedy D1
 U 1 1 554855E2
@@ -981,7 +957,6 @@ F 3 "" H 4250 7150 60  0000 C CNN
 	1    4250 7150
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 3825 6450
 NoConn ~ 3825 1650
 NoConn ~ 3825 1550
 Text GLabel 6530 2850 0    39   Input ~ 0
@@ -1122,8 +1097,6 @@ Wire Wire Line
 	4025 7450 4300 7450
 Wire Wire Line
 	3825 6850 4300 6850
-Wire Wire Line
-	1950 1650 1950 1850
 Connection ~ 1650 1600
 Wire Wire Line
 	1650 1600 1500 1600
@@ -1252,7 +1225,7 @@ Wire Wire Line
 	4600 3375 4875 3375
 Connection ~ 4775 3375
 Wire Wire Line
-	2250 1650 2325 1650
+	2275 1650 2325 1650
 Wire Wire Line
 	2325 1850 2275 1850
 Wire Wire Line
@@ -1348,8 +1321,6 @@ Wire Wire Line
 Wire Wire Line
 	3875 3350 3825 3350
 Wire Wire Line
-	3825 3450 3875 3450
-Wire Wire Line
 	3875 5650 3825 5650
 Wire Wire Line
 	3825 5550 3875 5550
@@ -1442,4 +1413,48 @@ Wire Wire Line
 	7525 4175 7525 4200
 Wire Wire Line
 	7525 4200 7600 4200
+Wire Wire Line
+	3875 6450 3825 6450
+Text Label 3875 3450 0    39   ~ 0
+BOOT1
+Wire Wire Line
+	3875 3450 3825 3450
+Text Label 2275 1650 2    39   ~ 0
+BOOT0
+Text Label 1250 4750 2    39   ~ 0
+BOOT0
+Text Label 1250 4875 2    39   ~ 0
+BOOT1
+$Comp
+L GND #PWR?
+U 1 1 56A0A41F
+P 1300 4925
+F 0 "#PWR?" H 1300 4675 50  0001 C CNN
+F 1 "GND" H 1308 4751 50  0000 C CNN
+F 2 "" H 1300 4925 60  0000 C CNN
+F 3 "" H 1300 4925 60  0000 C CNN
+	1    1300 4925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4925 1300 4875
+Wire Wire Line
+	1300 4875 1250 4875
+$Comp
+L VCC #PWR?
+U 1 1 56A0A6B3
+P 1300 4700
+F 0 "#PWR?" H 1300 4550 50  0001 C CNN
+F 1 "VCC" H 1320 4874 50  0000 C CNN
+F 2 "" H 1300 4700 60  0000 C CNN
+F 3 "" H 1300 4700 60  0000 C CNN
+	1    1300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4700 1300 4750
+Wire Wire Line
+	1300 4750 1250 4750
+Text Notes 1375 4900 0    47   ~ 0
+Boot from system\nmemory in order to \nuse DFU bootloader
 $EndSCHEMATC
