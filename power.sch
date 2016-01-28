@@ -662,17 +662,6 @@ F 3 "" H 925 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH_SMALL SW1
-U 1 1 554459C4
-P 1525 3900
-F 0 "SW1" V 1525 3850 30  0000 C CNN
-F 1 "Pushbutton" V 1675 3900 30  0000 C CNN
-F 2 "_div:_PTS525SK15-SMT-Pushbutton" H 1525 3900 60  0001 C CNN
-F 3 "" H 1525 3900 60  0000 C CNN
-	1    1525 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L C_Small C32
 U 1 1 55445FE3
 P 1175 3850
@@ -1735,4 +1724,18 @@ Text GLabel 3900 6775 2    39   Input ~ 0
 VCCA
 Text HLabel 1850 7275 0    39   Input ~ 0
 SENSOR_EN
+$Comp
+L PushButton_B3U SW1
+U 1 1 56AA1F82
+P 1525 3900
+F 0 "SW1" H 1525 4050 50  0000 C CNN
+F 1 "PushButton" H 1525 3675 50  0000 C CNN
+F 2 "_div:SMD_Pushbutton_B3U-3100P" H 1525 3900 50  0001 C CNN
+F 3 "" H 1525 3900 50  0000 C CNN
+	1    1525 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 4000 1575 4050
+Connection ~ 1575 4050
 $EndSCHEMATC
