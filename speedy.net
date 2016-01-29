@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/saladin/Documents/electronics/nanocopter/speedy.sch)
-    (date "Thu 28 Jan 2016 14:27:16 CET")
+    (date "Fri 29 Jan 2016 00:37:34 CET")
     (tool "Eeschema 0.201601262101+6516~42~ubuntu14.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -68,7 +68,7 @@
       (tstamp 55371D39))
     (comp (ref CONN4)
       (value MICRO_USB)
-      (footprint _connectors:_Micro-USB-AB-receptacle-SMT)
+      (footprint _connectors:_Micro-USB-AB-receptacle-SMT-th)
       (libsource (lib speedy-cache) (part MICRO_USB))
       (sheetpath (names /) (tstamps /))
       (tstamp 5537BD9F))

@@ -225,7 +225,7 @@ U 1 1 5537BD9F
 P 8375 1450
 F 0 "CONN4" H 8375 1850 60  0000 C CNN
 F 1 "MICRO_USB" H 8425 1050 60  0000 C CNN
-F 2 "_connectors:_Micro-USB-AB-receptacle-SMT" H 8375 1450 60  0001 C CNN
+F 2 "_connectors:_Micro-USB-AB-receptacle-SMT-th" H 8375 1450 60  0001 C CNN
 F 3 "" H 8375 1450 60  0000 C CNN
 	1    8375 1450
 	1    0    0    -1  
