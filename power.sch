@@ -62,9 +62,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title "Speedy the nanocopter autopilot"
-Date "Mon 25 Mai 2015"
-Rev "A"
+Title "Speedy the nanocopter"
+Date "2016-02-01"
+Rev "1C"
 Comp "Salah-Eddine Missri"
 Comment1 "License: CC-BY 4.0"
 Comment2 ""

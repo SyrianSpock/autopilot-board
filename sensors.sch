@@ -62,9 +62,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title "Speedy the nanocopter autopilot"
-Date "Mon 25 Mai 2015"
-Rev "A"
+Title "Speedy the nanocopter"
+Date "2016-02-01"
+Rev "1C"
 Comp "Salah-Eddine Missri"
 Comment1 "License: CC-BY 4.0"
 Comment2 ""
@@ -95,27 +95,15 @@ F 3 "" H 3750 2975 60  0000 C CNN
 $EndComp
 NoConn ~ 3375 1875
 NoConn ~ 3375 1975
-NoConn ~ 3375 2875
-$Comp
-L VCC #PWR035
-U 1 1 5536DF0C
-P 3525 3125
-F 0 "#PWR035" H 3525 2975 50  0001 C CNN
-F 1 "VCC" H 3525 3275 50  0000 C CNN
-F 2 "" H 3525 3125 60  0000 C CNN
-F 3 "" H 3525 3125 60  0000 C CNN
-	1    3525 3125
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR036
 U 1 1 5536DF1F
-P 3525 3225
-F 0 "#PWR036" H 3525 2975 50  0001 C CNN
-F 1 "GND" H 3525 3075 50  0000 C CNN
-F 2 "" H 3525 3225 60  0000 C CNN
-F 3 "" H 3525 3225 60  0000 C CNN
-	1    3525 3225
+P 3625 3250
+F 0 "#PWR036" H 3625 3000 50  0001 C CNN
+F 1 "GND" H 3625 3100 50  0000 C CNN
+F 2 "" H 3625 3250 60  0000 C CNN
+F 3 "" H 3625 3250 60  0000 C CNN
+	1    3625 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -230,17 +218,6 @@ NoConn ~ 1775 2625
 NoConn ~ 1775 2525
 NoConn ~ 1775 2425
 $Comp
-L MPU-9250-RESCUE-speedy U4
-U 1 1 553B9407
-P 2575 2525
-F 0 "U4" H 2975 3325 60  0000 C CNN
-F 1 "MPU-9250" H 2325 3325 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-24-1EP_3x3mm_Pitch0.4mm" H 2575 3125 60  0001 C CNN
-F 3 "" H 2575 3125 60  0000 C CNN
-	1    2575 2525
-	1    0    0    -1  
-$EndComp
-$Comp
 L C_Small C15
 U 1 1 554288B9
 P 1275 2025
@@ -333,10 +310,6 @@ Wire Wire Line
 	3425 2125 3375 2125
 Wire Wire Line
 	3425 2675 3375 2675
-Wire Wire Line
-	3525 3225 3375 3225
-Wire Wire Line
-	3375 3125 3525 3125
 Wire Wire Line
 	8200 2950 8500 2950
 Wire Wire Line
@@ -435,4 +408,25 @@ Wire Wire Line
 	9950 2400 10000 2400
 Wire Wire Line
 	9950 2500 10150 2500
+NoConn ~ 3375 3025
+Wire Wire Line
+	3375 2875 3625 2875
+$Comp
+L MPU-9250 U4
+U 1 1 56ACAF9A
+P 2575 2525
+F 0 "U4" H 2575 3462 60  0000 C CNN
+F 1 "MPU-9250" H 2575 3356 60  0000 C CNN
+F 2 "_sensors:_MPU-9XX0" H 2575 3125 60  0001 C CNN
+F 3 "" H 2575 3125 60  0000 C CNN
+	1    2575 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 2875 3625 3250
+Wire Wire Line
+	3375 3225 3625 3225
+Connection ~ 3625 3225
+Text GLabel 3375 3125 2    39   Input ~ 0
+VCCA
 $EndSCHEMATC
