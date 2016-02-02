@@ -330,7 +330,7 @@ Text Label 5275 6050 0    39   ~ 0
 SDIO_D3
 Text Label 5275 6150 0    39   ~ 0
 SDIO_CLK
-Text Label 3875 6650 0    39   ~ 0
+Text Label 5275 6650 0    39   ~ 0
 SDIO_CMD
 Text Label 3875 6350 0    39   ~ 0
 SD_DETECT
@@ -379,17 +379,6 @@ F 3 "" H 5025 5500 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
-U 1 1 5538B6D0
-P 5175 5500
-F 0 "R9" V 5255 5500 50  0000 C CNN
-F 1 "10k" V 5175 5500 50  0000 C CNN
-F 2 "_std:_0402" V 5105 5500 30  0001 C CNN
-F 3 "" H 5175 5500 30  0000 C CNN
-	1    5175 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L VCC #PWR012
 U 1 1 5538C13D
 P 4575 5350
@@ -433,17 +422,6 @@ F 3 "" H 5025 5350 60  0000 C CNN
 	1    5025 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L VCC #PWR016
-U 1 1 5538C2E9
-P 5175 5350
-F 0 "#PWR016" H 5175 5200 50  0001 C CNN
-F 1 "VCC" H 5175 5500 50  0000 C CNN
-F 2 "" H 5175 5350 60  0000 C CNN
-F 3 "" H 5175 5350 60  0000 C CNN
-	1    5175 5350
-	1    0    0    -1  
-$EndComp
 Text Label 10225 5275 0    39   ~ 0
 MOTOR_1_EN
 Text Label 10225 5375 0    39   ~ 0
@@ -476,8 +454,6 @@ Text Label 3875 5550 0    39   ~ 0
 MOTOR_3_IN
 Text Label 3875 5650 0    39   ~ 0
 MOTOR_4_IN
-Text Notes 4325 2425 0    39   ~ 0
-All motors PWM is wired on Timer 1\nEnable pins are on GPIO
 Text Notes 4325 2150 0    39   ~ 0
 SPI 1 used for \nMPU9250
 Text Label 3875 4450 0    39   ~ 0
@@ -492,7 +468,7 @@ Text Label 3875 4350 0    39   ~ 0
 NRF24L01+_EN
 Text Label 3875 4250 0    39   ~ 0
 NRF24L01+_INT
-Text Notes 4450 4375 0    39   ~ 0
+Text Notes 4325 4675 0    39   ~ 0
 SPI 2 used for \nNRF24L01+
 $Comp
 L C_Small C13
@@ -992,10 +968,9 @@ Wire Wire Line
 Wire Wire Line
 	10175 5275 10225 5275
 Wire Wire Line
-	4450 7100 4450 7200
-Connection ~ 5175 6150
+	4450 7100 4450 7150
 Wire Wire Line
-	5175 5650 5175 6150
+	4450 7150 4450 7200
 Connection ~ 5025 6050
 Wire Wire Line
 	5025 5650 5025 6050
@@ -1009,24 +984,36 @@ Connection ~ 4575 5750
 Wire Wire Line
 	4575 5650 4575 5750
 Wire Wire Line
-	3825 5950 5275 5950
+	3825 5950 4875 5950
 Wire Wire Line
-	3825 5850 5275 5850
+	4875 5950 5275 5950
 Wire Wire Line
-	3825 6050 5275 6050
+	3825 5850 4725 5850
+Wire Wire Line
+	4725 5850 5275 5850
+Wire Wire Line
+	3825 6050 5025 6050
+Wire Wire Line
+	5025 6050 5275 6050
 Wire Wire Line
 	3825 6150 5275 6150
 Wire Wire Line
-	3825 6650 3875 6650
+	3825 6650 5175 6650
 Wire Wire Line
-	3825 5750 5275 5750
+	5175 6650 5275 6650
+Wire Wire Line
+	3825 5750 4575 5750
+Wire Wire Line
+	4575 5750 5275 5750
 Connection ~ 8280 3500
 Wire Wire Line
 	8080 3500 8280 3500
 Wire Wire Line
 	8080 3450 8080 3500
 Wire Wire Line
-	8280 3450 8280 3550
+	8280 3450 8280 3500
+Wire Wire Line
+	8280 3500 8280 3550
 Wire Wire Line
 	7980 3550 7980 3450
 Wire Wire Line
@@ -1035,10 +1022,16 @@ Connection ~ 6605 2850
 Connection ~ 6605 3050
 Connection ~ 6880 3050
 Wire Wire Line
-	6605 3050 7430 3050
+	6605 3050 6880 3050
+Wire Wire Line
+	6880 3050 7430 3050
 Connection ~ 6880 2850
 Wire Wire Line
-	6530 2850 7430 2850
+	6530 2850 6605 2850
+Wire Wire Line
+	6605 2850 6880 2850
+Wire Wire Line
+	6880 2850 7430 2850
 Wire Wire Line
 	7380 3250 7430 3250
 Wire Wire Line
@@ -1078,9 +1071,13 @@ Connection ~ 4600 3850
 Wire Wire Line
 	4600 3775 4600 3850
 Wire Wire Line
-	3825 3850 5125 3850
+	3825 3850 4600 3850
 Wire Wire Line
-	3825 3950 5125 3950
+	4600 3850 5125 3850
+Wire Wire Line
+	3825 3950 4775 3950
+Wire Wire Line
+	4775 3950 5125 3950
 Connection ~ 4250 7450
 Wire Wire Line
 	4025 6950 4025 7450
@@ -1090,20 +1087,32 @@ Wire Wire Line
 	4650 6850 4500 6850
 Connection ~ 4650 7450
 Wire Wire Line
-	4500 7450 4775 7450
+	4500 7450 4650 7450
 Wire Wire Line
-	4650 6850 4650 7450
+	4650 7450 4775 7450
 Wire Wire Line
-	4025 7450 4300 7450
+	4650 6850 4650 7150
 Wire Wire Line
-	3825 6850 4300 6850
+	4650 7150 4650 7450
+Wire Wire Line
+	4025 7450 4250 7450
+Wire Wire Line
+	4250 7450 4300 7450
+Wire Wire Line
+	3825 6850 4250 6850
+Wire Wire Line
+	4250 6850 4300 6850
 Connection ~ 1650 1600
 Wire Wire Line
 	1650 1600 1500 1600
 Wire Wire Line
 	1650 1850 1650 1850
 Wire Wire Line
-	1650 1500 1650 1650
+	1650 1500 1650 1550
+Wire Wire Line
+	1650 1550 1650 1600
+Wire Wire Line
+	1650 1600 1650 1650
 Wire Wire Line
 	2325 1550 1650 1550
 Connection ~ 1650 1550
@@ -1116,9 +1125,13 @@ Connection ~ 1575 2350
 Connection ~ 1825 2350
 Connection ~ 2075 2350
 Wire Wire Line
-	1325 2325 1325 2400
+	1325 2325 1325 2350
 Wire Wire Line
-	1325 2600 1325 2675
+	1325 2350 1325 2400
+Wire Wire Line
+	1325 2600 1325 2650
+Wire Wire Line
+	1325 2650 1325 2675
 Wire Wire Line
 	1575 2650 1575 2600
 Wire Wire Line
@@ -1222,14 +1235,22 @@ Wire Wire Line
 Wire Notes Line
 	6000 475  6000 7800
 Wire Wire Line
-	4600 3375 4875 3375
+	4600 3375 4775 3375
+Wire Wire Line
+	4775 3375 4875 3375
 Connection ~ 4775 3375
 Wire Wire Line
 	2275 1650 2325 1650
 Wire Wire Line
 	2325 1850 2275 1850
 Wire Wire Line
-	2275 1850 2275 2350
+	2275 2350 2275 2250
+Wire Wire Line
+	2275 2250 2275 2150
+Wire Wire Line
+	2275 2150 2275 2050
+Wire Wire Line
+	2275 2050 2275 1850
 Connection ~ 2275 2350
 Wire Wire Line
 	2275 2050 2325 2050
@@ -1246,9 +1267,25 @@ Wire Wire Line
 	2275 2750 2325 2750
 Connection ~ 2275 2650
 Wire Wire Line
-	1325 2350 2325 2350
+	1325 2350 1575 2350
 Wire Wire Line
-	1325 2650 2325 2650
+	1575 2350 1825 2350
+Wire Wire Line
+	1825 2350 2075 2350
+Wire Wire Line
+	2075 2350 2275 2350
+Wire Wire Line
+	2275 2350 2325 2350
+Wire Wire Line
+	1325 2650 1575 2650
+Wire Wire Line
+	1575 2650 1825 2650
+Wire Wire Line
+	1825 2650 2075 2650
+Wire Wire Line
+	2075 2650 2275 2650
+Wire Wire Line
+	2275 2650 2325 2650
 Wire Wire Line
 	2175 3050 2325 3050
 Wire Wire Line
@@ -1258,7 +1295,11 @@ Wire Wire Line
 Wire Wire Line
 	1875 3050 1975 3050
 Wire Wire Line
-	1750 3550 2325 3550
+	1750 3550 1850 3550
+Wire Wire Line
+	1850 3550 2075 3550
+Wire Wire Line
+	2075 3550 2325 3550
 Wire Wire Line
 	1850 3600 1850 3550
 Connection ~ 1850 3550
@@ -1268,7 +1309,11 @@ Connection ~ 2075 3550
 Wire Wire Line
 	1850 3800 1850 3850
 Wire Wire Line
-	1750 3850 2325 3850
+	1750 3850 1850 3850
+Wire Wire Line
+	1850 3850 2075 3850
+Wire Wire Line
+	2075 3850 2325 3850
 Wire Wire Line
 	2075 3850 2075 3800
 Connection ~ 2075 3850
@@ -1457,4 +1502,37 @@ Wire Wire Line
 	1300 4750 1250 4750
 Text Notes 1375 4900 0    47   ~ 0
 Boot from system\nmemory in order to \nuse DFU bootloader
+Text Notes 3725 5550 0    31   ~ 0
+TIM8
+Text Notes 3725 2350 0    31   ~ 0
+TIM1
+Text Notes 3725 2450 0    31   ~ 0
+TIM1
+Text Notes 3725 5650 0    31   ~ 0
+TIM8
+$Comp
+L VCC #PWR016
+U 1 1 5538C2E9
+P 5175 5350
+F 0 "#PWR016" H 5175 5200 50  0001 C CNN
+F 1 "VCC" H 5175 5500 50  0000 C CNN
+F 2 "" H 5175 5350 60  0000 C CNN
+F 3 "" H 5175 5350 60  0000 C CNN
+	1    5175 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 5538B6D0
+P 5175 5500
+F 0 "R9" V 5255 5500 50  0000 C CNN
+F 1 "10k" V 5175 5500 50  0000 C CNN
+F 2 "_std:_0402" V 5105 5500 30  0001 C CNN
+F 3 "" H 5175 5500 30  0000 C CNN
+	1    5175 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 5650 5175 6650
+Connection ~ 5175 6650
 $EndSCHEMATC
