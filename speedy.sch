@@ -464,9 +464,9 @@ Text Label 3875 4650 0    39   ~ 0
 SPI2_MISO
 Text Label 3875 4750 0    39   ~ 0
 SPI2_MOSI
-Text Label 3875 4350 0    39   ~ 0
+Text Label 3875 3650 0    39   ~ 0
 NRF24L01+_EN
-Text Label 3875 4250 0    39   ~ 0
+Text Label 3875 3550 0    39   ~ 0
 NRF24L01+_INT
 Text Notes 4325 4675 0    39   ~ 0
 SPI 2 used for \nNRF24L01+
@@ -724,10 +724,6 @@ Text Notes 3300 5450 2    39   ~ 0
 ADC12_IN14\nADC12_IN15
 Text Label 7350 4400 2    39   ~ 0
 STM32F4_NRST
-Text Label 3875 2850 0    39   ~ 0
-STM32F4_TMS
-Text Label 3875 2950 0    39   ~ 0
-STM32F4_TCK
 $Comp
 L LED-RESCUE-speedy D1
 U 1 1 554855E2
@@ -939,33 +935,6 @@ Text GLabel 6530 2850 0    39   Input ~ 0
 SD_VCC
 Text Label 3875 6250 0    39   ~ 0
 SD_PWR_EN
-Text Label 3875 3550 0    39   ~ 0
-STM32F4_TDO
-Text Label 3875 3650 0    39   ~ 0
-STM32F4_TRST
-Text Label 7350 4700 2    39   ~ 0
-STM32F4_TDO
-Text Label 7350 4500 2    39   ~ 0
-STM32F4_TRST
-Text Label 3875 3050 0    39   ~ 0
-STM32F4_TDI
-Text Label 7350 4600 2    39   ~ 0
-STM32F4_TDI
-Text Label 7350 4900 2    39   ~ 0
-STM32F4_TCK
-Text Label 7350 4800 2    39   ~ 0
-STM32F4_TMS
-$Comp
-L JTAG CONN1
-U 1 1 55C96701
-P 7950 4550
-F 0 "CONN1" H 7950 5050 50  0000 C CNN
-F 1 "JTAG" H 7950 4050 50  0000 C CNN
-F 2 "_connectors:_Molex-PicoBlade-SMD-8" H 7950 4550 50  0001 C CNN
-F 3 "DOCUMENTATION" H 7950 4550 50  0001 C CNN
-	1    7950 4550
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR022
 U 1 1 55C9683C
@@ -1066,8 +1035,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 4800 7600 4800
 Wire Wire Line
-	7350 4900 7600 4900
-Wire Wire Line
 	7600 4600 7350 4600
 Wire Wire Line
 	3875 3750 3825 3750
@@ -1077,10 +1044,6 @@ Wire Wire Line
 	7600 4500 7350 4500
 Wire Wire Line
 	7350 4400 7600 4400
-Wire Wire Line
-	3875 3650 3825 3650
-Wire Wire Line
-	3875 3550 3825 3550
 Wire Notes Line
 	6000 2150 8870 2150
 Wire Notes Line
@@ -1139,8 +1102,6 @@ Wire Wire Line
 	3825 4350 3875 4350
 Wire Wire Line
 	3875 4250 3825 4250
-Wire Wire Line
-	3825 3050 3875 3050
 Wire Wire Line
 	3825 2750 3875 2750
 Wire Wire Line
@@ -1569,4 +1530,36 @@ F 3 "" H 1850 6775 60  0000 C CNN
 $EndComp
 Text Notes 1025 6225 0    47   ~ 0
 Pull-down resistors \nto avoid bootloader problems \n(see AN2606 Rev 25)
+$Comp
+L SWD/DEBUG CONN?
+U 1 1 57531C38
+P 7950 4500
+F 0 "CONN?" H 8128 4546 50  0000 L CNN
+F 1 "SWD/DEBUG" H 8128 4455 50  0000 L CNN
+F 2 "MODULE" H 7950 4450 50  0001 C CNN
+F 3 "DOCUMENTATION" H 7950 4450 50  0001 C CNN
+	1    7950 4500
+	1    0    0    -1  
+$EndComp
+Text Label 3875 2850 0    39   ~ 0
+STM32F4_SWDIO
+Text Label 3875 2950 0    39   ~ 0
+STM32F4_SWCLK
+NoConn ~ 3825 3050
+Wire Wire Line
+	3875 3550 3825 3550
+Wire Wire Line
+	3875 3650 3825 3650
+Text Label 3875 4250 0    39   ~ 0
+UART3_TX
+Text Label 3875 4350 0    39   ~ 0
+UART3_RX
+Text Label 7350 4800 2    39   ~ 0
+UART3_RX
+Text Label 7350 4700 2    39   ~ 0
+UART3_TX
+Text Label 7350 4600 2    39   ~ 0
+STM32F4_SWCLK
+Text Label 7350 4500 2    39   ~ 0
+STM32F4_SWDIO
 $EndSCHEMATC
