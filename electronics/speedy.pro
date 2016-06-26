@@ -1,4 +1,4 @@
-update=ven. 24 juin 2016 01:05:54 CEST
+update=dim. 26 juin 2016 04:13:17 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -88,3 +88,14 @@ LibName56=kicad-lib/components/_stm32
 LibName57=kicad-lib/components/_wireless
 LibName58=kicad-lib/components/_power
 LibName59=kicad-lib/components/_motor_drivers
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+ERC_TestSimilarLabels=1

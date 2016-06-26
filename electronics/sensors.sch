@@ -301,7 +301,7 @@ Text GLabel 10450 1800 2    39   Input ~ 0
 VCCA
 Wire Notes Line
 	475  4075 11225 4075
-NoConn ~ 3375 3025
+NoConn ~ 3375 3125
 Wire Wire Line
 	3375 2875 3625 2875
 $Comp
@@ -320,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	3375 3225 3625 3225
 Connection ~ 3625 3225
-Text GLabel 3375 3125 2    39   Input ~ 0
+Text GLabel 3375 3025 2    39   Input ~ 0
 VCCA
 $Comp
 L VL53L0X U6
