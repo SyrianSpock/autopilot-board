@@ -333,13 +333,13 @@ Text Label 11000 5925 2    39   ~ 0
 MOTOR_3_IN
 Text Label 11000 6025 2    39   ~ 0
 MOTOR_4_IN
-Text Label 4400 3250 2    39   ~ 0
+Text Label 4400 5150 2    39   ~ 0
 MOTOR_1_EN
-Text Label 4400 3350 2    39   ~ 0
+Text Label 4400 5250 2    39   ~ 0
 MOTOR_2_EN
 Text Label 4400 6450 2    39   ~ 0
 MOTOR_3_EN
-Text Label 4400 3750 2    39   ~ 0
+Text Label 4400 5050 2    39   ~ 0
 MOTOR_4_EN
 Text Label 4400 2450 2    39   ~ 0
 MOTOR_1_IN
@@ -368,7 +368,7 @@ U 1 1 554194AF
 P 6605 2575
 F 0 "C6" H 6630 2625 50  0000 L CNN
 F 1 "10uF" H 6630 2500 50  0000 L CNN
-F 2 "_std:_0603" H 6605 2575 60  0001 C CNN
+F 2 "_std:C_0603" H 6605 2575 60  0001 C CNN
 F 3 "" H 6605 2575 60  0000 C CNN
 	1    6605 2575
 	1    0    0    -1  
@@ -510,9 +510,9 @@ Text Label 11000 4400 2    39   ~ 0
 PUSHBUTTON_INT
 Text Label 11000 4500 2    39   ~ 0
 POWER_KILL
-Text Label 4400 1750 2    39   ~ 0
+Text Label 4400 3350 2    39   ~ 0
 PUSHBUTTON_INT
-Text Label 4400 1650 2    39   ~ 0
+Text Label 4400 3250 2    39   ~ 0
 POWER_KILL
 Text Label 11000 4700 2    39   ~ 0
 IR_EN_TOP
@@ -520,7 +520,7 @@ Text Label 11000 4800 2    39   ~ 0
 IR_EN_BOTTOM
 Text Label 4400 4050 2    39   ~ 0
 IR_EN_TOP
-Text Label 4400 4150 2    39   ~ 0
+Text Label 4400 2350 2    39   ~ 0
 IR_EN_BOTTOM
 $Comp
 L F_Small F1
@@ -562,11 +562,11 @@ Text Label 6525 6100 0    39   ~ 0
 STATUS_LED
 Text Label 6525 6200 0    39   ~ 0
 DEBUG_LED
-Text Label 4400 5050 2    39   ~ 0
+Text Label 4400 1550 2    39   ~ 0
 ERROR_LED
-Text Label 4400 5150 2    39   ~ 0
+Text Label 4400 1650 2    39   ~ 0
 STATUS_LED
-Text Label 4400 5250 2    39   ~ 0
+Text Label 4400 1750 2    39   ~ 0
 DEBUG_LED
 Text Notes 650  975  0    60   ~ 0
 Microcontroller\nSTM32F405/7\nLQFP64
@@ -823,9 +823,9 @@ Text Label 10700 3200 2    39   ~ 0
 TOF_GPIO1
 Text Label 10700 3300 2    39   ~ 0
 TOF_XSHUT
-Text Label 4400 1550 2    39   ~ 0
+Text Label 4400 3750 2    39   ~ 0
 TOF_XSHUT
-Text Label 4400 3050 2    39   ~ 0
+Text Label 4400 4150 2    39   ~ 0
 TOF_GPIO1
 Text Label 4400 4450 2    39   ~ 0
 WIFI_CS
@@ -839,7 +839,7 @@ Text Label 4400 3650 2    39   ~ 0
 WIFI_EN
 Text Label 4400 3550 2    39   ~ 0
 WIFI_INT
-Text Label 4400 2350 2    39   ~ 0
+Text Label 4400 3050 2    39   ~ 0
 WIFI_RST_N
 Text Notes 4775 2125 0    39   ~ 0
 SPI 1
@@ -930,7 +930,7 @@ U 1 1 576D896E
 P 7675 5900
 F 0 "D2" H 7575 5875 50  0000 C CNN
 F 1 "POWER" H 7850 5875 50  0000 C CNN
-F 2 "_std:_LED_0603" V 7675 5900 50  0001 C CNN
+F 2 "_std:D_0603" V 7675 5900 50  0001 C CNN
 F 3 "" V 7675 5900 50  0000 C CNN
 	1    7675 5900
 	-1   0    0    1   
@@ -941,7 +941,7 @@ U 1 1 576DAF88
 P 7675 6000
 F 0 "D3" H 7575 5975 50  0000 C CNN
 F 1 "ERROR" H 7850 5975 50  0000 C CNN
-F 2 "_std:_LED_0603" V 7675 6000 50  0001 C CNN
+F 2 "_std:D_0603" V 7675 6000 50  0001 C CNN
 F 3 "" V 7675 6000 50  0000 C CNN
 	1    7675 6000
 	-1   0    0    1   
@@ -952,7 +952,7 @@ U 1 1 576DB0CF
 P 7675 6100
 F 0 "D4" H 7575 6075 50  0000 C CNN
 F 1 "STATUS" H 7850 6075 50  0000 C CNN
-F 2 "_std:_LED_0603" V 7675 6100 50  0001 C CNN
+F 2 "_std:D_0603" V 7675 6100 50  0001 C CNN
 F 3 "" V 7675 6100 50  0000 C CNN
 	1    7675 6100
 	-1   0    0    1   
@@ -963,7 +963,7 @@ U 1 1 576DB215
 P 7675 6200
 F 0 "D5" H 7575 6175 50  0000 C CNN
 F 1 "DEBUG" H 7850 6175 50  0000 C CNN
-F 2 "_std:_LED_0603" V 7675 6200 50  0001 C CNN
+F 2 "_std:D_0603" V 7675 6200 50  0001 C CNN
 F 3 "" V 7675 6200 50  0000 C CNN
 	1    7675 6200
 	-1   0    0    1   
@@ -1008,7 +1008,7 @@ Wire Wire Line
 Wire Wire Line
 	10275 1475 9600 1475
 Wire Wire Line
-	4400 3750 3825 3750
+	4400 5050 3825 5050
 Wire Wire Line
 	9600 1575 10275 1575
 Wire Wire Line
@@ -1038,7 +1038,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 2850 3825 2850
 Wire Wire Line
-	3825 5050 4400 5050
+	3825 1550 4400 1550
 Wire Wire Line
 	4400 4950 3825 4950
 Wire Wire Line
@@ -1046,17 +1046,17 @@ Wire Wire Line
 Wire Wire Line
 	4400 5650 3825 5650
 Wire Wire Line
-	4400 3350 3825 3350
+	4400 5250 3825 5250
 Wire Wire Line
-	4400 3250 3825 3250
+	4400 5150 3825 5150
 Wire Wire Line
-	3825 2350 4400 2350
+	3825 3050 4400 3050
 Wire Wire Line
 	4400 2450 3825 2450
 Wire Wire Line
 	4400 2550 3825 2550
 Wire Wire Line
-	4400 1750 3825 1750
+	4400 3350 3825 3350
 Wire Wire Line
 	4400 6350 3825 6350
 Wire Wire Line
@@ -1145,9 +1145,9 @@ Wire Wire Line
 Wire Notes Line
 	5675 500  5675 7825
 Wire Wire Line
-	4400 5250 3825 5250
+	4400 1750 3825 1750
 Wire Wire Line
-	4400 5150 3825 5150
+	4400 1650 3825 1650
 Wire Wire Line
 	4400 6250 3825 6250
 Wire Wire Line
@@ -1155,7 +1155,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 5350 3825 5350
 Wire Wire Line
-	4400 4150 3825 4150
+	4400 2350 3825 2350
 Wire Wire Line
 	4400 4050 3825 4050
 Wire Wire Line
@@ -1365,7 +1365,7 @@ Wire Wire Line
 	1850 5100 1850 5425
 Connection ~ 1850 5400
 Wire Wire Line
-	3825 1650 4400 1650
+	3825 3250 4400 3250
 Wire Wire Line
 	5775 3850 6625 3850
 Wire Wire Line
@@ -1381,9 +1381,9 @@ Wire Wire Line
 Wire Wire Line
 	10350 3200 10700 3200
 Wire Wire Line
-	3825 1550 4400 1550
+	3825 3750 4400 3750
 Wire Wire Line
-	4400 3050 3825 3050
+	4400 4150 3825 4150
 Wire Notes Line
 	4425 4775 4450 4775
 Wire Notes Line
@@ -1489,7 +1489,7 @@ U 1 1 576E2A1E
 P 6450 4450
 F 0 "C13" H 6475 4525 50  0000 L CNN
 F 1 "100uF" H 6475 4375 50  0000 L CNN
-F 2 "_std:_0603" H 6450 4450 60  0001 C CNN
+F 2 "_std:C_0603" H 6450 4450 60  0001 C CNN
 F 3 "" H 6450 4450 60  0000 C CNN
 	1    6450 4450
 	1    0    0    -1  
