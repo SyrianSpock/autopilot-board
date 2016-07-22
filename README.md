@@ -1,5 +1,5 @@
-Speedy the nanocopter autopilot board
-=====================================
+Speedy, the nanocopter
+======================
 
 The aim of this project is to design a board enabling the control of a small quadrotor (nanocopter) that can be tracked by external visual sensors.
 
@@ -11,16 +11,17 @@ The aim of this project is to design a board enabling the control of a small qua
     - MPU9250 (9 axis): accelerometer, gyroscope and magnetometer
     - MS5611 barometer
 * Ground distance sensor:
-    - ST VL6180X for landing / ground approch
-* Radio module:
-    - NRF24L01+ for telemetry and telecommand
+    - ST VL53L0X for landing / ground approach
+* Telemetry module:
+    - ESP12E for telemetry and telecommand through WiFi
 * USB interface (for DFU programming / serial interface) and power/charging
 * Battery management unit
 	- Monitor battery (current, voltage)
 	- Supply power to the board from a LiPo (1S) input
 	- Recharge the battery through USB
 
-### Block diagram
-![Block diagram](doc/speedy_autopilot.png)
+### PCB
 
-Parts in grey are external modules.
+The 40mm x 40mm board is rendered below
+![PCB front view](doc/pcb_front.png)
+![PCB back view](doc/pcb_back.png)
